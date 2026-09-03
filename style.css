@@ -2,9 +2,9 @@
   --bg-principal: #0b0f19;
   --bg-secundario: #151a2d;
   --bg-tarjeta: #1e243b;
-  --color-primario: #6366f1;
-  --color-secundario: #8b5cf6;
-  --color-acento: #3b82f6;
+  --color-primario: #5254b4;
+  --color-secundario: #3d30c7;
+  --color-acento: #4b3bf6;
   --texto-principal: #f1f5f9;
   --texto-secundario: #94a3b8;
   --error: #ef4444;
@@ -364,4 +364,50 @@ body {
   .hero-texto h1 {
     font-size: 2rem;
   }
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+:root {
+    --estrella-aesteteki: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0 C10 5 15 10 20 10 C15 10 10 15 10 20 C10 15 5 10 0 10 C5 10 10 5 10 0 Z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+}
+
+@keyframes parpadeo-estrellas {
+    0%, 100% { 
+        opacity: 0.2; 
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)); 
+    }
+    50% { 
+        opacity: 0.9; 
+        filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9)); 
+    }
+}
+
+body::before, body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::before {
+    background-image: var(--estrella-aesteteki), var(--estrella-aesteteki), var(--estrella-aesteteki);
+    background-position: 15% 50%, 85% 30%, 50% 80%;
+    background-size: 10px 10px, 6px 6px, 8px 8px;
+    background-repeat: no-repeat;
+    animation: parpadeo-estrellas 4s infinite alternate;
+}
+
+body::after {
+    background-image: var(--estrella-aesteteki), var(--estrella-aesteteki), var(--estrella-aesteteki);
+    background-position: 30% 70%, 70% 20%, 90% 90%;
+    background-size: 7px 7px, 11px 11px, 5px 5px;
+    background-repeat: no-repeat;
+    animation: parpadeo-estrellas 3s infinite alternate-reverse;
 }
