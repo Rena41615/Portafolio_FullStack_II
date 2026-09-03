@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor navegacion-container">
+            <a href="#inicio" class="logo">Portafolio</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion hero-seccion">
+            <div class="contenedor hero-grid">
+                <div class="hero-texto">
+                    <h1>Hola, soy <span class="texto-destacado">Desarrollador Fullstack</span></h1>
+                    <p>Estudiante de Informática enfocado en el desarrollo web moderno, frontend y backend.</p>
+                    <div class="hero-botones">
+                        <a href="#proyectos" class="btn btn-primario">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn-secundario">Contáctame</a>
+                    </div>
+                </div>
+                <div class="hero-imagen">
+                    <img src="https://via.placeholder.com/320x320" alt="Foto de perfil profesional">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Sobre mí</h2>
+                <div class="tarjeta info-tarjeta">
+                    <p>Estudiante de 2do año de Ingeniería en Informática, cuento con formacion técnico profesional de DuocUC.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Mis Habilidades</h2>
+
+                <div class="habilidades-grid">
+                    <div class="tarjeta habilidad-card">
+                        <h3>HTML</h3>
+                        <p>Diseño</p>
+                    </div>
+
+                    <div class="tarjeta habilidad-card">
+                        <h3>Agentes IA</h3>
+                        <p>Manejo...</p>
+                    </div>
+
+                    <div class="tarjeta habilidad-card">
+                        <h3>Java</h3>
+                        <p>Manejo de..</p>
+                    </div>
+
+                    <div class="tarjeta habilidad-card">
+                        <h3>Python</h3>
+                        <p>Manejo de...</p>
+                    </div>
+
+                    <div class="tarjeta habilidad-card">
+                        <h3>SpringBoot</h3>
+                        <p>Proyectos</p>
+                    </div>
+
+                    <div class="tarjeta habilidad-card">
+                        <h3>Bases de Datos</h3>
+                        <p>Gestión</p>
+                    </div>
+
+                    <div class="tarjeta habilidad-card">
+                        <h3>Docker</h3>
+                        <p>Automatización de contenedores</p>
+                    </div>
+                    <div class="tarjeta habilidad-card">
+                        <h3>Amazon Web Service</h3>
+                        <p>Gestión de instancias de maquinas virtuales, usando servicios como S3, EC2, VPC.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Proyectos Destacados</h2>
+                <div class="proyectos-grid">
+                    <article class="tarjeta proyecto-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Vista previa proyecto 1">
+                        <div class="proyecto-contenido">
+                            <h3>Sistema de Gestión Web</h3>
+                            <p>Aplicación desarrollada con HTML5, CSS adaptativo y JavaScript interactivo.</p>
+                            <div class="proyecto-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primario">Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secundario">Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta proyecto-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Vista previa proyecto 2">
+                        <div class="proyecto-contenido">
+                            <h3>Aplicación backend Polideportivo</h3>
+                            <p>Consumo de datos dinámicos mediante JS y diseño responsivo con CSS Grid.</p>
+                            <div class="proyecto-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primario">Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secundario">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Contacto</h2>
+                <div class="tarjeta formulario-contenedor">
+                    <form id="form-contacto" novalidate>
+                        <div class="grupo-formulario">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                            <span class="mensaje-error" id="error-nombre"></span>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu-correo@duocuc.cl">
+                            <span class="mensaje-error" id="error-email"></span>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+                            <span class="mensaje-error" id="error-mensaje"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primario btn-bloque">Enviar Mensaje</button>
+                        <div id="mensaje-exito" class="mensaje-exito"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+            <p>&copy; 2026 Portafolio Profesional. Todos los derechos reservados.</p>
+            <div class="redes-sociales">
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
