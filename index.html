@@ -8,50 +8,65 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="contenedor navegacion-container">
-            <a href="#inicio" class="logo">Portafolio</a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="header">
+    <div class="contenedor navegacion-container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio" class="activo">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <main>
-        <section id="inicio" class="seccion hero-seccion">
-            <div class="contenedor hero-grid">
-                <div class="hero-texto">
-                    <h1>Hola, soy <span class="texto-destacado">Desarrollador Fullstack</span></h1>
-                    <p>Estudiante de Informática enfocado en el desarrollo web moderno, frontend y backend.</p>
-                    <div class="hero-botones">
-                        <a href="#proyectos" class="btn btn-primario">Ver Proyectos</a>
-                        <a href="#contacto" class="btn btn-secundario">Contáctame</a>
-                    </div>
-                </div>
-                <div class="hero-imagen">
-                    <img src="\img\fotoPerfil.jpg" alt="Foto de perfil profesional">
+<main class="contenido-crt">
+    <section id="inicio" class="seccion hero-seccion" style="display: block;">
+        <div class="contenedor hero-grid">
+            <div class="hero-texto">
+                <h1>Hola, soy <span class="texto-destacado">Desarrollador Fullstack</span></h1>
+                <p>Estudiante de Informática enfocado en el desarrollo web moderno, frontend y backend.</p>
+                <div class="hero-botones">
+                    <a href="#proyectos" class="btn btn-primario">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secundario">Contáctame</a>
                 </div>
             </div>
-        </section>
+            <div class="hero-imagen">
+                <img src="img/fotoPerfil.jpg" alt="Foto de perfil profesional">
+            </div>
+        </div>
+    </section>
 
-        <section id="sobre-mi" class="seccion">
-            <div class="contenedor">
+    <section id="sobre-mi" class="seccion">
+        <nav class="sub-navbar">
+            <ul>
+                <li><a href="#" class="sub-activo" data-target="sobre-info">STATUS</a></li>
+                <li><a href="#" data-target="sobre-mapa">MAPA</a></li>
+            </ul>
+        </nav>
+        <div class="contenedor">
+            <div id="sobre-info" class="sub-seccion sub-activa">
                 <h2 class="titulo-seccion">Sobre mí</h2>
                 <div class="tarjeta info-tarjeta">
-                    <p>Estudiante en 2do año de Ingeniería Informática en DuocUC, soy una persona que esta siempre dispuesta a aprender del resto y acoplarme de forma integral al entorno en el que esté,
-                        desde hace mucho tengo interés y motivación por esta área, que tiene una inmensa capacidad de llevar lo que imagines
-                        a la realidad, el hecho de poder desempeñarme en esta área y poder ser parte de la comunidad y avance de todo ello es algo que
-                        me mantiene despierta a ser receptiva con todo lo que ofrezcan las tecnologías de vanguardia.
-                    </p>
+                    <p>Estudiante en 2do año de Ingeniería Informática en DuocUC, soy una persona que esta siempre dispuesta a aprender del resto y acoplarme de forma integral al entorno en el que esté, desde hace mucho tengo interés y motivación por esta área, que tiene una inmensa capacidad de llevar lo que imagines a la realidad, el hecho de poder desempeñarme en esta área y poder ser parte de la comunidad y avance de todo ello es algo que me mantiene despierta a ser receptiva con todo lo que ofrezcan las tecnologías de vanguardia.</p>
                 </div>
             </div>
-        </section>
+            <div id="sobre-mapa" class="sub-seccion">
+                <h2 class="titulo-seccion">Ubicación Local</h2>
+                <div class="mapa-tarjeta">
+                    <div class="mapa-fallout">
+                        <img class="mapa-fondo" src="img/mapaPuertoMonttDuocUC.png" alt="Mapa Puerto Montt">
+                        <div class="marcador-duoc">
+                            <img src="img/Icon_map_belltower.svg" alt="Icono DuocUC">
+                            <span>DUOCUC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section id="habilidades" class="seccion">
             <div class="contenedor">
